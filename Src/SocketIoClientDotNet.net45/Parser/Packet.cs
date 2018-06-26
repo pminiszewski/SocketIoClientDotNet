@@ -83,13 +83,7 @@ namespace Quobject.SocketIoClientDotNet.Parser
             var jsonArgs = new JArray();
             foreach (var o in _args)
             {
-                if (!(o is string))
-                {
-                    var obj = JObject.FromObject(o);
-                    jsonArgs.Add(obj);
-                }
-                else
-                    jsonArgs.Add(o);
+                jsonArgs.Add(o);
             }
 
             return jsonArgs;
