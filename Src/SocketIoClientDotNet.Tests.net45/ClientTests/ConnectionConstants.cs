@@ -7,9 +7,9 @@ namespace SocketIoClientDotNet.Tests.ClientTests
 {
     public static class ConnectionConstants
     {
-        public static int PORT = 80;
-        public static string HOSTNAME = "testme.quobject.com";
-        public static int SSL_PORT = 443;
+        public static int PORT = 8080;
+        public static string HOSTNAME = "127.0.0.1";
+        public static int SSL_PORT = 4430;
         public static readonly int TIMEOUT = 300000;
     }
 }
